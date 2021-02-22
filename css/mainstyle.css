@@ -1,3 +1,52 @@
+/* 
+Everything is this css class is just decoration,
+except for the .bought class.
+*/
+html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input, button {
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    margin-right: .5em;
+}
+
+#hideErrorbox, li {
+    cursor: pointer;
+}
+
+#errorbox {
+    margin: 0 auto;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    background: rgba(255, 255, 255, .5);
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border: none; /* remove border from paper css */
+    border-radius: 0;
+    z-index: -1;
+}
+
+/* Only this class is actually used in JavaScript! */
 .bought {
     text-decoration: line-through;
 }
